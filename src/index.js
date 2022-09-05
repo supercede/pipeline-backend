@@ -1,10 +1,12 @@
 const express = require("express");
+const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const calcAge = require("./utils/calculateAge");
 require("dotenv").config();
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 const limiter = rateLimit({

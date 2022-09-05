@@ -1,6 +1,5 @@
 function calcAge(dateOfBirth) {
   const today = new Date();
-  //   const dateOfBirth = new Date(dob);
 
   let todayInBirthYear = new Date(
     dateOfBirth.getFullYear(),
